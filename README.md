@@ -3,7 +3,6 @@
 [![Pod Version](http://img.shields.io/cocoapods/v/EasyShareKit.svg?style=flat)](http://cocoadocs.org/docsets/EasyShareKit/)
 [![Pod Platform](http://img.shields.io/cocoapods/p/EasyShareKit.svg?style=flat)](http://cocoadocs.org/docsets/EasyShareKit/)
 [![Pod License](http://img.shields.io/cocoapods/l/EasyShareKit.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
-[![Dependency Status](https://www.versioneye.com/objective-c/EasyShareKit/badge.svg?style=flat)](https://www.versioneye.com/objective-c/EasyShareKit)
 
 # EasyShareKit
 
