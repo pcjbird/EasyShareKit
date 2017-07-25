@@ -10,8 +10,6 @@
 
 > 可以通过自定义 H5 元标记的方式来自定义属于您自己项目的分享对象。
 
-<a href="https://itunes.apple.com/cn/app/iclock-simplest-always-best/id1128196970?pt=117947806&ct=com.github.pcjbird.EasyShareKit&mt=8"><img src="http://www.lessney.com/wp-content/uploads/2017/07/iclock_banner.png" title="iClock - 一款满足“挑剔”的翻页时钟与任务闹钟"></a>
-
 ## 什么是 H5 元标记（H5 Meta Tags）
 
 H5 元标记，即 H5 Meta Tags，对 Open graph 协议下的常规 meta tag 进行支持和兼容，并基于国情对 OpenGraph 不适用的对象类型或属性进行有限扩展标记。可以和 OpenGraph 一起使用。
@@ -264,7 +262,7 @@ image 属性定义多个值，即多张图片
 <meta name="MyProject:video:update_at" content="视频的更新时间" />
 ```
 
-#### 图片（image
+#### 图片（image）
 | H5 Meta Tags | 数据类型 | 是否必填 | OpenGraph | 说明 |
 | :-: | :-: | :-: | :-: | :-: |
 | MyProject:type | string | 必填 | og:type | image，对象类型 |
@@ -275,6 +273,8 @@ image 属性定义多个值，即多张图片
 | MyProject:image:full_image | string | |  og:image | 图片的原始大图 |
 | MyProject:image:create_at | date time |  |  | 图片的创建时间 |
 | MyProject:image:update_at | date time |  |  | 图片的更新时间 |
+
+<a href="https://itunes.apple.com/cn/app/iclock-simplest-always-best/id1128196970?pt=117947806&ct=com.github.pcjbird.EasyShareKit&mt=8"><img src="http://www.lessney.com/wp-content/uploads/2017/07/iclock_banner.png" title="iClock - 一款满足“挑剔”的翻页时钟与任务闹钟"></a>
 
 代码示例：//必填
 
