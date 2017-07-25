@@ -460,6 +460,26 @@ image 属性定义多个值，即多张图片
 ```
 说明： `og:image` 参数对应`MyProject:app:image`（缩略图）和 `MyProject:app:full_image`（原始大图），若需要区分缩略图与原始大图，请分别设定 `MyProject:app:image` 和 `MyProject:app:full_image`，`MyProject` 标记会覆盖 `og` 标记。
 
+## 安装 / Installation
+
+
+
+* `EasyShareKit` is available through CocoaPods. To install it, simply add the following line to your Podfile:
+
+```
+pod "EasyShareKit"
+```
+
+## 使用 / Usage
+
+```
+ EasyShareKit * shareKit = [[EasyShareKit alloc] initWithUrl:@"https://github.com/HackerLoop/metatags-101"];
+    [shareKit setCustomMetaTags:[NSArray arrayWithObjects:@"MyProject", nil]];
+    [shareKit getWebShareInfo:^(EasyShareInfo *shareInfo, long cost,NSError *error) {
+        NSLog(@"%@",shareInfo.title);
+    }];
+```
+
 ## 关注我们 / Follow us
 
 <a href="https://itunes.apple.com/cn/app/iclock-simplest-always-best/id1128196970?pt=117947806&ct=com.github.pcjbird.EasyShareKit&mt=8"><img src="iClock.png" width="686" title="iClock - 一款满足“挑剔”的翻页时钟与任务闹钟"></a>
