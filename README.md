@@ -4,6 +4,7 @@
 [![Pod Platform](http://img.shields.io/cocoapods/p/EasyShareKit.svg?style=flat)](http://cocoadocs.org/docsets/EasyShareKit/)
 [![Pod License](http://img.shields.io/cocoapods/l/EasyShareKit.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
+<a href="https://itunes.apple.com/cn/app/iclock-simplest-always-best/id1128196970?pt=117947806&ct=com.github.pcjbird.EasyShareKit&mt=8"><img src="http://www.lessney.com/wp-content/uploads/2017/07/iclock_banner.png" title="iClock - 一款满足“挑剔”的翻页时钟与任务闹钟"></a>
 # EasyShareKit
 
 ### Easy way to parse share object from H5 page. 一种从 H5 页面获取分享对象的简便的方法。
