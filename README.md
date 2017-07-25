@@ -7,7 +7,9 @@
 
 # EasyShareKit
 
-### Easy way to parse share info from H5 page. 一种从 H5 页面获取分享数据的简便的方法。
+### Easy way to parse share object from H5 page. 一种从 H5 页面获取分享对象的简便的方法。
+
+> 可以通过自定义 H5 元标记的方式来自定义属于您自己项目的分享对象。
 
 ## 什么是 H5 元标记（H5 Meta Tags）
 
