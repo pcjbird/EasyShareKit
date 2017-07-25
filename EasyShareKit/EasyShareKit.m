@@ -8,8 +8,8 @@
 
 #import "EasyShareKit.h"
 
-#if __has_include(<Hpple/TFHpple.h>)
-#import <Hpple/TFHpple.h>
+#if __has_include(<hpple/TFHpple.h>)
+#import <hpple/TFHpple.h>
 #else
 #import "TFHpple.h"
 #endif
