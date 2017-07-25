@@ -374,12 +374,12 @@ image 属性定义多个值，即多张图片
 | H5 Meta Tags | 数据类型 | 是否必填 | OpenGraph | 说明 |
 | :-: | :-: | :-: | :-: | :-: |
 | MyProject:type | string | 必填 | og:type | book，对象类型 |
-| MyProject:book:url | string | 必填 | og:url | 书的URL地址 |
-| MyProject:book:title | string | 必填 | og:title | 书的显示名称 |
-| MyProject:book:description | string | 必填 | og:description | 书的文字描述 |
-| MyProject:book:image | string |  | og:image | 书的显示图片 |
-| MyProject:book:isbn | string |  |  | 10或13位数字的ISBN书号 |
-| MyProject:book:create_at | date time |  |  | 书的出版时间 |
+| MyProject: book:url | string | 必填 | og:url | 书的URL地址 |
+| MyProject: book:title | string | 必填 | og:title | 书的显示名称 |
+| MyProject: book:description | string | 必填 | og:description | 书的文字描述 |
+| MyProject: book:image | string |  | og:image | 书的显示图片 |
+| MyProject: book:isbn | string |  |  | 10或13位数字的ISBN书号 |
+| MyProject: book:create_at | date time |  |  | 书的出版时间 |
 
 代码示例：//必填
 
