@@ -158,11 +158,13 @@
     {
         shareInfo.type = EasyShareType_Webpage;
         shareInfo.title = [titleElement content];
+        if(!shareInfo.title) shareInfo.title = [titleElement text];
         shareInfo.url = _url;
     }
     TFHppleElement *descElement = [doc peekAtSearchWithXPathQuery:@"//meta[@name=\"description\"]"];
     if(descElement)
     {
+        shareInfo.resolvedByMeta = TRUE;
         shareInfo.desc = [descElement objectForKey:@"content"];
     }
     

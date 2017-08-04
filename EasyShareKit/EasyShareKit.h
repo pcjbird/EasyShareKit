@@ -8,6 +8,9 @@
 //  框架名称:EasyShareKit
 //  框架功能:Easy way to parse share info from H5 page. 一种从 H5 页面获取分享数据的简便的方法。
 //  修改记录:
+//     pcjbird    2017-07-25  Version:1.0.2 Build:201708040001
+//                            1.BUG修复。
+//
 //     pcjbird    2017-07-25  Version:1.0.1 Build:201707250002
 //                            1.支持CI集成。
 //

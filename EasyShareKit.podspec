@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'EasyShareKit'
   s.summary      = 'Easy way to parse share object from H5 page. 一种从 H5 页面获取分享对象的简便的方法。'
-  s.version      = '1.0.1'
+  s.version      = '1.0.2'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { 'pcjbird' => 'pcjbird@hotmail.com' }
   s.social_media_url = 'http://www.lessney.com'
