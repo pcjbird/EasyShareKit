@@ -25,6 +25,7 @@
         self.title = @"";
         self.desc = @"";
         self.image = @"";
+        self.keywords = nil;
         self.url = @"";
         self.create = nil;
         self.url = nil;
@@ -166,6 +167,17 @@
     {
         shareInfo.resolvedByMeta = TRUE;
         shareInfo.desc = [descElement objectForKey:@"content"];
+    }
+    
+    TFHppleElement *keywordsElement = [doc peekAtSearchWithXPathQuery:@"//meta[@name=\"keywords\"]"];
+    if(keywordsElement)
+    {
+        NSString*rawKeywords = [keywordsElement objectForKey:@"content"];
+        if([rawKeywords isKindOfClass:[NSString class]])
+        {
+            NSArray<NSString*> * keywords = [rawKeywords componentsSeparatedByString:@","];
+            shareInfo.keywords = keywords;
+        }
     }
     
     //Google +/Pinterest

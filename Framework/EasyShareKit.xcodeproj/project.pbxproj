@@ -29,6 +29,9 @@
 		899C42CA1F26F5D100BD2DA4 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
 		899C42CB1F26F5D100BD2DA4 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		899C42D21F26F84F00BD2DA4 /* EasyShareKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyShareKit.m; sourceTree = "<group>"; };
+		89A79C9A1FFE6EE6009AF079 /* EasyShareKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = EasyShareKit.podspec; path = ../EasyShareKit.podspec; sourceTree = "<group>"; };
+		89A79C9B1FFE6EE6009AF079 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		89A79C9C1FFE6EE6009AF079 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 		899C42C21F26F4CA00BD2DA4 /* EasyShareKit */ = {
 			isa = PBXGroup;
 			children = (
+				89A79C991FFE6ED0009AF079 /* Metadata */,
 				899C42C51F26F5D100BD2DA4 /* Hpple */,
 				899C42C31F26F4CA00BD2DA4 /* EasyShareKit.h */,
 				899C42D21F26F84F00BD2DA4 /* EasyShareKit.m */,
@@ -97,6 +101,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89A79C991FFE6ED0009AF079 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				89A79C9A1FFE6EE6009AF079 /* EasyShareKit.podspec */,
+				89A79C9B1FFE6EE6009AF079 /* LICENSE */,
+				89A79C9C1FFE6EE6009AF079 /* README.md */,
+			);
+			name = Metadata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
