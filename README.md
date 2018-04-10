@@ -4,7 +4,10 @@
 [![Pod Platform](http://img.shields.io/cocoapods/p/EasyShareKit.svg?style=flat)](http://cocoadocs.org/docsets/EasyShareKit/)
 [![Pod License](http://img.shields.io/cocoapods/l/EasyShareKit.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![CocoaPods](https://img.shields.io/cocoapods/at/EasyShareKit.svg)](https://github.com/pcjbird/EasyShareKit)
+[![CocoaPods](https://img.shields.io/cocoapods/dt/EasyShareKit.svg)](https://github.com/pcjbird/EasyShareKit)
 [![GitHub release](https://img.shields.io/github/release/pcjbird/EasyShareKit.svg)](https://github.com/pcjbird/EasyShareKit/releases)
+[![GitHub release](https://img.shields.io/github/release-date/pcjbird/EasyShareKit.svg)](https://github.com/pcjbird/EasyShareKit/releases)
+[![Website](https://img.shields.io/website-pcjbird-down-green-red/https/shields.io.svg?label=author)](https://pcjbird.github.io)
 
 # EasyShareKit
 
