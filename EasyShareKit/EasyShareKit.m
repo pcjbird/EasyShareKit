@@ -49,13 +49,14 @@
 
 @interface EasyShareKit()
 
+@property(nonatomic, copy)EasyShareInfoBlock   block;
+
 @end
 
 @implementation EasyShareKit
 {
     NSString*            _url;
     NSString*            _html;
-    EasyShareInfoBlock   _block;
     NSDate*              _begin;
     NSMutableArray*      _customtags;
 }
@@ -105,6 +106,7 @@
 {
     _block = block;
     _begin = [NSDate date];
+    __weak typeof(self) weakSelf = self;
     if([_url isKindOfClass:[NSString class]])
     {
         NSURL *url = [NSURL URLWithString:_url];
@@ -117,7 +119,7 @@
             if(error)
             {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    if(_block)_block(nil, [self getCostTime], error);
+                    if(weakSelf.block)weakSelf.block(nil, [weakSelf getCostTime], error);
                 });
                 return;
             }
@@ -139,7 +141,7 @@
         {
             NSError*error = [NSError errorWithDomain:@"EasyShareKit" code:1000 userInfo:[NSDictionary dictionaryWithObjectsAndKeys:@"无法获取分享信息，未设置URL或HTML数据。（EasyShareKit）", @"message", nil]];
             dispatch_async(dispatch_get_main_queue(), ^{
-                _block(nil, [self getCostTime], error);
+                weakSelf.block(nil, [weakSelf getCostTime], error);
             });
         }
     }
@@ -1419,9 +1421,9 @@
             if([bodyText isKindOfClass:[NSString class]])shareInfo.desc = [bodyText substringWithRange:NSMakeRange(0, MIN(250, [bodyText length]))];
         }
     }
-    
+    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        if(_block) _block(shareInfo, [self getCostTime], nil);
+        if(weakSelf.block) weakSelf.block(shareInfo, [weakSelf getCostTime], nil);
     });
 }
 @end
