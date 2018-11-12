@@ -1423,7 +1423,11 @@
     }
     __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
-        if(weakSelf.block) weakSelf.block(shareInfo, [weakSelf getCostTime], nil);
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        if(strongSelf && strongSelf.block)
+        {
+            strongSelf.block(shareInfo, [strongSelf getCostTime], nil);
+        }
     });
 }
 @end
